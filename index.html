@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 </head>
 <body>
-    <p>test</p>
-    <p>test2</p>
+    <div id="calculator">
+        <div id="screen">
+            <div id="result"></div>
+            <div id="operation"></div>
+        </div>
+        <div id="allBtns">
+            <div id="actionBtns">
+                <button id="clear">Clear</button>
+                <button id="delete">Delete</button>
+            </div>
+            <div id="smallBtns">
+                    <button class="smallBtn">7</button>
+                    <button class="smallBtn">8</button>
+                    <button class="smallBtn">9</button>
+                    <button class="smallBtn" id="division">/</button>
+                    <button class="smallBtn">4</button>
+                    <button class="smallBtn">5</button>
+                    <button class="smallBtn">6</button>
+                    <button class="smallBtn" id="multiplication">*</button>
+                    <button class="smallBtn">1</button>
+                    <button class="smallBtn">2</button>
+                    <button class="smallBtn">3</button>
+                    <button class="smallBtn" id="substraction">-</button>
+                    <button class="smallBtn">0</button>
+                    <button class="smallBtn" id="point">.</button>
+                    <button class="smallBtn" id="egal">=</button>
+                    <button class="smallBtn" id="addition">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
