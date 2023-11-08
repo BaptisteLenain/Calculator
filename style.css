@@ -4,35 +4,45 @@ body {
     font-family: Verdana;
 }
 
+div {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
 #calculator {
     border: solid black 1px;
     width: 400px;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     margin: 20px;
     align-items: center;
+    background-color: #66caa6;
 }
 
 #screen {
     border: solid black 1px;
     width: 380px;
-    height: 100px;
+    height: 150px;
     margin: 10px 0;
+    background-color: #cfe5e3;
 }
 
 #allBtns {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 468px;
+    height: 400px;
     width: 380px;
 }
 
 #actionBtns {
-    height: 50px;
+    height: 60px;
     width: 380px;
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -46,6 +56,53 @@ body {
     grid-template-rows: repeat(4, 1fr);
     column-gap: 10px;
     row-gap: 10px;
-    height: 500px;
+    height: 400px;
     width: 380px;
+}
+
+.smallBtn {
+    background-color: #063e4a;
+    color: white;
+  
+}
+
+.smallBtn:hover {
+    background-color: #063d4ae1;
+    color: white;
+}
+
+.smallBtn:active {
+    background-color: #063e4a;
+}
+
+.actionBtn {
+    background-color: #cc280b;
+    color: white;
+}
+
+.actionBtn:hover {
+    background-color: #d52f12;
+    color: white;
+}
+
+.actionBtn:active {
+    background-color: #cc280b;
+    color: white;
+}
+
+
+
+#model {
+    align-self: flex-start;
+    margin: 10px 0 0 10px;
+}
+
+#model p {
+   color: #cc280b;
+   font-style: italic;
+   margin: 0;
+}
+
+#model h2 {
+    margin: 0;
 }
